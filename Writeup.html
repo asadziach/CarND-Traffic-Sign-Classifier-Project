@@ -11812,7 +11812,7 @@ $$\acute{\sigma} = max(\sigma, \frac{1}{\sqrt{size}})$$<p>sigma is the standard 
 <p>Number of training examples after augmentation = 172860</p>
 <p>Samples per class = 4020</p>
 <h4 id="Architecture">Architecture<a class="anchor-link" href="#Architecture">&#182;</a></h4><p>My final model consisted of the following layers:</p>
-<table>
+<h5 id="LeNet-Deep">LeNet Deep<a class="anchor-link" href="#LeNet-Deep">&#182;</a></h5><table>
 <thead><tr>
 <th style="text-align:center">Layer</th>
 <th style="text-align:center">Description</th>
@@ -11856,6 +11856,10 @@ $$\acute{\sigma} = max(\sigma, \frac{1}{\sqrt{size}})$$<p>sigma is the standard 
 <td style="text-align:center">2x2 stride,  outputs 5x5x64</td>
 </tr>
 <tr>
+<td style="text-align:center">Flatten</td>
+<td style="text-align:center">Input = 5x5x64. Output = 1600</td>
+</tr>
+<tr>
 <td style="text-align:center">Fully connected</td>
 <td style="text-align:center">Input = 1600. Output = 120</td>
 </tr>
@@ -11878,9 +11882,6 @@ $$\acute{\sigma} = max(\sigma, \frac{1}{\sqrt{size}})$$<p>sigma is the standard 
 <tr>
 <td style="text-align:center">Fully Connected</td>
 <td style="text-align:center">Input = 84. Output = 43</td>
-</tr>
-<tr>
-<td style="text-align:center">Softmax</td>
 </tr>
 </tbody>
 </table>
@@ -12002,6 +12003,19 @@ $$\acute{\sigma} = max(\sigma, \frac{1}{\sqrt{size}})$$<p>sigma is the standard 
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div>
     </div>
   </div>

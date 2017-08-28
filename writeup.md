@@ -95,6 +95,8 @@ Samples per class = 4020
 
 My final model consisted of the following layers:
 
+##### LeNet Deep
+
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x3 RGB image   							| 
@@ -106,13 +108,13 @@ My final model consisted of the following layers:
 | Convolution 5x5     	| 1x1 stride, valid padding, outputs 10x10x64 	|
 | RELU					|												|
 | Max pooling	      	| 2x2 stride,  outputs 5x5x64 				    |
+| Flatten       		| Input = 5x5x64. Output = 1600					|
 | Fully connected		| Input = 1600. Output = 120					|
 | RELU					|												|
 | Fully connected		| Input = 120 Output = 84   					|
 | RELU					|												|
 | Dropout         		| 0.5 during training 							|
-| Fully Connected		| Input = 84. Output = 43					    |
-| Softmax       		|                       					    |
+| Fully Connected		| Input = 84. Output = 43
  
 ![alt text][image14]
 
